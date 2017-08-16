@@ -1,9 +1,13 @@
 <html><head>
 <style type="text/css">
   .bar {
-    font-weight:normal;
-    color:#DEBD83;
     background-color: #733816;
+    height: 15%;
+  }
+  .baritem:hover {
+    background-color: #B2673C; 
+  }
+  .baritem {
     letter-spacing: 1pt;
     word-spacing: 2pt;
     font-size: 177%;
@@ -11,9 +15,8 @@
     font-family: georgia, serif;
     line-height: 2;
     height: 15%;
-  }
-  .bar:hover {
-   background-color: #B2673C; 
+    color:#DEBD83;
+    font-weight: bold;
   }
   .body {
     position: absolute;
@@ -25,7 +28,7 @@
 </style>
 </head>
 <body>
-<p class="bar">THIS IS A BAR</p>
+  <p class="bar"><span class="baritem">THIS</span><span class="baritem">IS</span><span class="baritem">A</span><span class="baritem">BAR</span></p>
   <div class="body">
     And this<br>
     Would be<br>
