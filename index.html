@@ -5,14 +5,15 @@
   <meta name="author" content="David Stroud">
 <style type="text/css">
   .bar {
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    position: fixed;
     background-color: #733816;
     height: 25%;
     width: 99%;
   }
   .baritem:hover {
+    background-color: #B2673C;
+  }
+  .bartitle:hover {
     background-color: #B2673C;
   }
   .baritem {
@@ -35,10 +36,9 @@
   }
   .body {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 15%;
     width: 70%;
-    height: 80%;
     font-family: palatino linotype, palatino, serif;
   }
   .body * {
@@ -63,18 +63,11 @@
     top: 0%;
     width: 100%;
     text-align: center;
-    letter-spacing: 1pt;
-    font-size: 177%;
-    font-family: georgia, serif;
-    line-height: 2;
-    color: #DEBD83;
-    font-weight: bold;
-    text-decoration: none;
   }
 </style>
 </head>
 <body>
-  <div class="bar"><div class="bartitle">SARAH STROUD</div>
+  <div class="bar"><div class="bartitle"><a href="/" class="baritemlink">SARAH STROUD</a></div>
     <div class="baritem baritem1"><a href="/" class="baritemlink">CV</a></div>
     <div class="baritem baritem2"><a href="/" class="baritemlink">PUBLICATIONS</a></div>
     <div class="baritem baritem3"><a href="/" class="baritemlink">ABOUT</a></div>
