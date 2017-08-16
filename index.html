@@ -11,7 +11,7 @@
   .baritem:hover {
     background-color: #666666; /* #B2673C */
   }
-  .baritem {
+  .baritem div {
     letter-spacing: 1pt;
     font-size: 177%;
     text-align: center;
@@ -23,8 +23,10 @@
     background-color: #888888;
     position: absolute;
     top: 0%;
+  }
+  .baritem {
     width: 24%;
-    float: left;
+    float: left; 
   }
   .body {
     position: absolute;
@@ -36,10 +38,10 @@
 </style>
 </head>
 <body>
-  <div class="bar"><div class="baritem baritem1">THIS</div>
-    <div class="baritem baritem2">IS</div>
-    <div class="baritem baritem3">A</div>
-    <div class="baritem baritem4">BAR</div></div>
+  <div class="bar"><div class="baritem"><div>THIS</div></div>
+    <div class="baritem"><div>IS</div></div>
+    <div class="baritem"><div>A</div></div>
+    <div class="baritem"><div>BAR</div></div></div>
   <div class="body">
     And this<br>
     Would be<br>
