@@ -72,7 +72,6 @@
   line-height: 12vh;
 }
 body {
-  background-color: #E0DCAA;
   -webkit-animation: fadein 3s;
   animation: fadein 5s;
 }
@@ -80,10 +79,12 @@ body {
   from {
     opacity: 0;
     filter: alpha(opacity=0);
+    background-color: #000000;
   }
   to {
     opacity: 1;
     filter: alpha(opacity=1);
+    background-color: #E0DCAA;
   }
 }
 @keyframes fadein {
