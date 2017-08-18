@@ -42,9 +42,9 @@
     left: 15%;
     width: 70%;
     font-family: palatino linotype, palatino, serif;
-    border-radius: 4%;
-    -moz-border-radius: 4%;
-    -webkit-border-radius: 4%;
+    border-radius: 10%;
+    -moz-border-radius: 10%;
+    -webkit-border-radius: 10%;
     background-color: #353429;
     box-shadow: 3px 3px 3px #000000;
     color: #F4C242
@@ -74,7 +74,29 @@
     line-height: 12vh;
   }
   body {
-   background-color: #E0DCAA; 
+   background-color: #E0DCAA;
+    -webkit-animation: fadein 3s;
+    animation: fadein 3s;
+  }
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+    to {
+      opacity: 1;
+      filter: alpha(opacity=1);
+    }
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+    to {
+      opacity: 1;
+      filter: alpha(opacity=1);
+    }
   }
 </style>
 </head>
