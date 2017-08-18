@@ -31,8 +31,8 @@
 .baritemlink[lines="1"] {
  line-height: 12vh; 
 }
-.baritemlink[lines="4"] {
- line-height: 1.5vh; 
+.baritemlink[lines="2"] {
+ line-height: 6vh; 
 }
 .body {
   position: absolute;
