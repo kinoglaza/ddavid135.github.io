@@ -27,8 +27,13 @@
   font-weight: bold;
   text-decoration: none;
   margin: auto;
-  line-height: 12vh;
   }
+.baritemlink[lines="1"] {
+ line-height: 12vh; 
+}
+.baritemlink[lines="2"] {
+ line-height: 6vh; 
+}
 .body {
   position: absolute;
   top: 30%;
