@@ -1,0 +1,17 @@
+<h1>Random script generator by David</h1>
+<script src="code/js/sprsg.js">
+</script>
+<p><input type="checkbox" onclick="displaySettings(this.checked);">Settings</p>
+<div id="settings"></div>
+<div id="defaddword">
+<input type="text" value="Word to add" id="wordtoadd" onkeypress="isEnter(event);" autofocus>
+<input type="button" value="Add word" onclick="handleAddWord((document.getElementById('wordtoadd')).value);">
+<p><input type="checkbox" onclick="handleDisplayWords(this.checked);" id="displaycheck">Display words</p>
+<p id="worddisplay"></p></div>
+<div id="altaddword" style="display: none;">
+<textarea style="resize: none; height: 10%;" id="altwords" onkeyup="handleAltAddWord(this.value);"></textarea>
+</div>
+<p><input type="number" min="1" value="5" id="linescount">Number of lines
+<br><br><input type="number" min="1" value="5" id="wordsperlinecount">Number of words per line</p>
+<input type="button" value="Generate!" onclick="handleGenerate();">
+<p id="scriptdisplay"></p>
