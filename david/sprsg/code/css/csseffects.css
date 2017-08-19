@@ -1,6 +1,6 @@
-a[csseffect~=color] {
+a[color~=csseffects_true] {
   color: #245AD8;
 }
-a[csseffect~=fsize] {
+a[fsize=csseffects_true] {
   font-size: 24pt;
 }
