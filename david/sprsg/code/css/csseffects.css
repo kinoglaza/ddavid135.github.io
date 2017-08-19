@@ -1,3 +1,6 @@
-a[csseffect=color] {background-color: #FCDBA6;
-
+a[csseffect~=color] {
+  color: #245AD8;
+}
+a[csseffect~=fsize] {
+  font-size: 24pt;
 }
