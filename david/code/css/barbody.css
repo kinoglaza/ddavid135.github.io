@@ -1,0 +1,110 @@
+.bar {
+  position: fixed;
+  background-color: #733816;
+  height: 24%;
+  width: 100%;
+}
+.baritem:hover {
+  background-color: #F4C77F;
+}
+.bartitle:hover {
+  background-color: #F4C77F;
+}
+.baritem {
+  height: 50%;
+  background-color: #F4B042;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  text-align: center;
+}
+.baritemlink {
+  letter-spacing: 1pt;
+  font-size: 177%;
+  font-family: georgia, serif;
+  line-height: 2;
+  color: #6886D8;
+  font-weight: bold;
+  text-decoration: none;
+  margin: auto;
+  }
+.baritemlink[lines="1"] {
+ line-height: 12vh; 
+}
+.body {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 70%;
+  font-family: palatino linotype, palatino, serif;
+  border-radius: 15px 15px;
+  -moz-border-radius: 15px 15px;
+  -webkit-border-radius: 15px 15px;
+  background-color: #353429;
+  box-shadow: 3px 3px 3px #000000;
+  color: #F4C242;
+  height: 65%;
+}
+.body div * {
+  font-family: palatino linotype, palatino, serif;
+}
+.body div {
+  position: absolute;
+  left: 20px;
+}
+.baritem1 {
+  left: 0%;
+}
+.baritem2 {
+  left: 50%;
+}
+.bartitle {
+  height: 50%;
+  background-color: #F4B042;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  line-height: 12vh;
+}
+.background {
+  -webkit-animation: fadein 5s;
+  animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  background-color: #E0DCAA;
+  width: 100%;
+  height: 100%;
+}
+body {
+ background-color: #FFFFFF; 
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=1);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=1);
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=1);
+  }
+}
