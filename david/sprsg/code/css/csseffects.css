@@ -4,3 +4,6 @@ a[csseffects~=color] {
 a[csseffects~=fsize] {
   font-size: 24pt;
 }
+a[csseffects~=color]:visited {
+  color: white;
+}
