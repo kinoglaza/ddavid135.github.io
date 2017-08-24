@@ -1,0 +1,167 @@
+<title>RSG by David Poetry Edition</title>
+<h1>Random script generator by David Poetry Edition v1.4</h1>
+<style>
+.sidebar {
+resize: horizontal;
+height: 80%;
+width: 10%;
+position: absolute;
+overflow: auto;
+border-bottom: 3px orange solid;
+border-top: 3px orange solid;
+top: 15%;
+}
+.rightpositioned {
+right: 0%;
+border-left: 3px orange solid;
+}
+.leftpositioned {
+border-right: 3px orange solid;
+}
+.isequaltoparent {
+position: relative;
+width: 100%;
+}
+textarea.isequaltoparent {
+height: 80%;
+resize: none;
+}
+</style>
+<div class="sidebar leftpositioned">
+<p style="color: orange;">Clicking the bottom-right corner of these sidebars and then dragging to the right makes them larger</p>
+<p style="color: blue;">A verse is like this:
+<br>1st Stanza 1st phrase
+<br>
+<br>2nd Stanza 1st phrase
+<br>2nd Stanza 2nd phrase</p>
+<script>
+// Word handling function
+function handleAddWord(word) {
+if (!window.words) {
+window.words = [];
+}
+if (window.settings.breakdown) {
+var currentwords = word.split(" ");
+for (i = 0; i < currentwords.length; i++) {
+window.words.push(currentwords[i]);
+}
+// finished for ()
+}
+// finished if (window.settings.breakdown)
+else {
+window.words[window.words.length] = word;
+}
+// Just cleaning up
+document.getElementById("wordtoadd").value = "";
+}
+// Display words handling function
+function handleDisplayWords(display) {
+var worddisplayel = document.getElementById("worddisplay");
+if (display == true && window.words) {
+for (i = 0; i < window.words.length; i++) {
+worddisplayel.innerHTML = worddisplayel.innerHTML + window.words[i] + (i == (window.words.length - 1) ? "" : "<br><br>");
+}
+// For loop done
+}
+// If (display == true && window.words) done
+if (display == false && window.words) {
+worddisplayel.innerHTML = "";
+}
+// If (display == false && window.words) done
+}
+// Generate handling function
+function handleGenerate() {
+var scriptdisplayel = document.getElementById("scriptdisplay");
+scriptdisplayel.innerHTML = "";
+var linescountel = document.getElementById("linescount");
+var linescount = (Number(linescountel.value));
+var wordsperlinecountel = document.getElementById("wordsperlinecount");
+var wordsperlinecount = (Number(wordsperlinecountel.value));
+// document.getElementById() and other stuff done
+for (j = 0; j < linescount; j++) {
+window.linearray = [];
+for (i = 0; i < wordsperlinecount; i++) {
+window.linearray[i] = window.words[((Math.floor((Math.random() * window.words.length))))];
+}
+// For loop for creating line array done
+var line = window.linearray.join(" ");
+scriptdisplayel.innerHTML = scriptdisplayel.innerHTML + "<br><br>" + line;
+}
+// For loop for whole script done
+}
+function isEnter(eobj) {
+if (eobj.keyCode) {
+var key = eobj.keyCode;
+}
+else if (eobj.key) {
+var key = eobj.key;
+}
+else if (eobj.keyIdentifier) {
+var key = eobj.keyIdentifier;
+}
+// Done with cross-browser deprecated annoyingness, now onto detecting enter keypress
+if (key == 13) {
+handleAltAddWord((document.getElementById("wordtoadd")).value);
+}
+}
+// End isEnter function
+function displaySettings(display) {
+var settingsdiv = document.getElementById("settings");
+if (!window.settings) {
+window.settings = {};
+}
+if (display) {
+settingsdiv.innerHTML = "<input type='checkbox' onclick='breakdown(this.checked);' " + (window.settings.breakdown ? "checked" : "") + ">Word breakdown";
+settingsdiv.innerHTML = settingsdiv.innerHTML + "<br><br><input type='checkbox' onclick='altword(this.checked);' " + (window.settings.altword ? "checked" : "") + ">Alternate word system";
+}
+// Done if (display)
+else {
+settingsdiv.innerHTML = "";
+}
+}
+function breakdown(on) {
+window.settings.breakdown = on;
+}
+function altword(on) {
+window.settings.altword = on;
+document.getElementById("altaddword").style.display = (on ? "block" : "none");
+document.getElementById("defaddword").style.display = (on ? "none" : "block");
+}
+function handleAltAddWord(rawwords) {
+var encverses = encodeURIComponent(rawwords).split("%0A%0A");
+var LperV = [];
+var lines = [];
+var lineN = 0;
+// Starting for loop
+for (var i = 0; i < encverses.length; i++) {
+var verse = encverses[i].split("%0A");
+LperV[i] = verse.length;
+for (var j = 0; j < verse.length; j++) {
+lineN++;
+lines[lineN] = decodeURIComponent(verse[j]);
+}
+// End for verse
+}
+// End for encverses
+lines.splice(0, 1);
+var total = "";
+for (var liam = 0; liam < LperV.length; liam++) {
+for (var cameron = 0; cameron < LperV[liam]; cameron++) {
+total += lines[Math.floor(Math.random() * lines.length)];
+total += "<br>";
+}
+// End for lines
+total += "<br><br>";
+}
+// End for LperV
+document.getElementById("scriptdisplay").innerHTML = total;
+}
+// End handleAltAddWord function
+settings = {altword: true};
+</script>
+<input type="button" value="Generate!" onclick="handleAltAddWord(document.getElementById('altwords').value);">
+<p id="scriptdisplay"></p></div>
+<div class="sidebar rightpositioned">
+<p>Enter in your words here</p>
+<textarea id="altwords" class="isequaltoparent"></textarea>
+</div>
