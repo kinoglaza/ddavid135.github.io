@@ -117,3 +117,22 @@ body {
     filter: alpha(opacity=1);
   }
 }
+@media all and(orientation: portrait) {
+  .orientation-portrait {
+    display: block; 
+  }
+  .orientation-landscape {
+    display: none; 
+  }
+}
+@media all and(orientation: landscape) {
+  .orientation-portrait {
+    display: none; 
+  }
+  .orientation-landscape {
+    display: block; 
+  }
+}
+}
+  
+}
