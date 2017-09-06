@@ -117,7 +117,10 @@ body {
     filter: alpha(opacity=1);
   }
 }
-@media all and(orientation: portrait) {
+.orientation-portrait {
+  display: none;
+}
+@media all and(orientation: portrait) and(max-device-width: 1000px) {
   .orientation-portrait {
     display: block; 
   }
@@ -125,7 +128,7 @@ body {
     display: none; 
   }
 }
-@media all and(orientation: landscape) {
+@media all and(orientation: landscape) and(max-device-width: 1000px) {
   .orientation-portrait {
     display: none; 
   }
