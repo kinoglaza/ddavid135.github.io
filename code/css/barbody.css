@@ -117,22 +117,3 @@ body {
     filter: alpha(opacity=1);
   }
 }
-.orientation-portrait {
-  display: none;
-}
-@media all and(orientation: portrait) and(max-device-height: 1000px) {
-  .orientation-portrait {
-    display: block; 
-  }
-  .orientation-landscape {
-    display: none; 
-  }
-}
-@media all and(orientation: landscape) and(max-device-height: 1000px) {
-  .orientation-portrait {
-    display: none; 
-  }
-  .orientation-landscape {
-    display: block; 
-  }
-}
