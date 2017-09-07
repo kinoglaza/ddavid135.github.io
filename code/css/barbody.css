@@ -28,7 +28,7 @@
   text-decoration: none;
   margin: auto;
   }
-.baritemlink[isbaritem=true]:hover {
+.baritemlink:hover {
   animation: hover 4s infinite;
   -moz-animation: hover 4s infinite;
   -webkit-animation: hover 4s infinite;
@@ -82,7 +82,14 @@
   line-height: 12vh;
 }
 .bartitlelink {
-  color: #000;
+  letter-spacing: 1pt;
+  font-size: 177%;
+  font-family: georgia, serif;
+  line-height: 2;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  margin: auto;
 }
 .bartitlelink:hover {
   animation: hover 4s infinite;
