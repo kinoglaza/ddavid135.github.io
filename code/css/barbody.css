@@ -75,6 +75,7 @@
   width: 100%;
   text-align: center;
   line-height: 12vh;
+  color: #000;
 }
 .background {
   -webkit-animation: fadein 5s;
