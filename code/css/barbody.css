@@ -3,6 +3,9 @@
   background-color: #733816;
   height: 24%;
   width: 100%;
+  box-shadow: 3px 3px #733816;
+  -webkit-box-shadow: 3px 3px #733816;
+  -moz-box-shadow: 3px 3px #733816;
 }
 .baritem:hover {
   background-color: #B2673C;
