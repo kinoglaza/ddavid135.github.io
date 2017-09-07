@@ -28,10 +28,10 @@
   text-decoration: none;
   margin: auto;
   }
-.baritemlink:hover {
-  animation: hover 2s infinite;
-  -moz-animation: hover 2s infinite;
-  -webkit-animation: hover 2s infinite;
+.baritemlink[isbaritem=true]:hover {
+  animation: hover 4s infinite;
+  -moz-animation: hover 4s infinite;
+  -webkit-animation: hover 4s infinite;
 }
 .baritemlink[lines="1"] {
  line-height: 12vh; 
@@ -85,9 +85,9 @@
   color: #000;
 }
 .bartitlelink:hover {
-  animation: hover 2s infinite;
-  -moz-animation: hover 2s infinite;
-  -webkit-animation: hover 2s infinite;
+  animation: hover 4s infinite;
+  -moz-animation: hover 4s infinite;
+  -webkit-animation: hover 4s infinite;
 }
 .background {
   -webkit-animation: fadein 5s;
@@ -130,51 +130,69 @@ body {
     filter: alpha(opacity=1);
   }
 }
-@keyframes hover {
-  from {
-    color: #DEBD83;
-  }
-  to {
-    color: #92CEC5;
-  }
-}
 @-moz-keyframes hover {
-  from {
+  0% {
     color: #DEBD83;
   }
-  to {
+  50% {
     color: #92CEC5;
+  }
+  100% {
+    color: #DEBD83;
   }
 }
-@-webkit-keyframes hover {
-  from {
+@keyframes hover {
+  0% {
     color: #DEBD83;
   }
-  to {
+  50% {
     color: #92CEC5;
+  }
+  100% {
+    color: #DEBD83;
+  }
+}
+@-webkit-es hover {
+  0% {
+    color: #DEBD83;
+  }
+  50% {
+    color: #92CEC5;
+  }
+  100% {
+    color: #DEBD83;
   }
 }
 @keyframes hover2 {
-  from {
+  0% {
     color: #000000;
   }
-  to {
+  50% {
     color: #92CEC5;
+  }
+  100% {
+    color: #000000;
   }
 }
 @-moz-keyframes hover2 {
-  from {
+  0% {
     color: #000000;
   }
-  to {
+  50% {
     color: #92CEC5;
+  }
+  100% {
+    color: #000000;
   }
 }
 @-webkit-keyframes hover2 {
-  from {
+  0% {
     color: #000000;
   }
-  to {
+  50% {
     color: #92CEC5;
+  }
+  100% {
+    color: #000000;
   }
 }
