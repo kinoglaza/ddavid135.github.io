@@ -27,7 +27,18 @@
   font-weight: bold;
   text-decoration: none;
   margin: auto;
+  animation: hover;
+  animation-play-state: paused;
+  -moz-animation: hover;
+  -moz-animation-play-state: paused;
+  -webkit-animation: hover;
+  -webkit-animation-play-state: paused;
   }
+.baritemlink:hover {
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+}
 .baritemlink[lines="1"] {
  line-height: 12vh; 
 }
@@ -78,6 +89,12 @@
 }
 .bartitlelink {
   color: #000;
+  animation: hover2;
+  animation-play-state: paused;
+  -moz-animation: hover2;
+  -moz-animation-play-state: paused;
+  -webkit-animation: hover2;
+  -webkit-animation-play-state: paused;
 }
 .background {
   -webkit-animation: fadein 5s;
@@ -90,7 +107,7 @@
 body {
  background-color: #FFFFFF; 
 }
-@-webkit-keyframes fadein {
+@keyframes fadein {
   from {
     opacity: 0;
     filter: alpha(opacity=0);
@@ -100,7 +117,7 @@ body {
     filter: alpha(opacity=1);
   }
 }
-@keyframes fadein {
+@-webkit-keyframes fadein {
   from {
     opacity: 0;
     filter: alpha(opacity=0);
@@ -118,5 +135,53 @@ body {
   to {
     opacity: 1;
     filter: alpha(opacity=1);
+  }
+}
+@keyframes hover {
+  from {
+    color: #DEBD83;
+  }
+  to {
+    color: #92CEC5
+  }
+}
+@-moz-keyframes hover {
+  from {
+    color: #DEBD83;
+  }
+  to {
+    color: #92CEC5
+  }
+}
+@-webkit-keyframes hover {
+  from {
+    color: #DEBD83;
+  }
+  to {
+    color: #92CEC5
+  }
+}
+@keyframes hover2 {
+  from {
+    color: #000000;
+  }
+  to {
+    color: #92CEC5
+  }
+}
+@-moz-keyframes hover2 {
+  from {
+    color: #000000;
+  }
+  to {
+    color: #92CEC5
+  }
+}
+@-webkit-keyframes hover2 {
+  from {
+    color: #000000;
+  }
+  to {
+    color: #92CEC5
   }
 }
