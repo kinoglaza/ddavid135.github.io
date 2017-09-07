@@ -27,11 +27,11 @@
   font-weight: bold;
   text-decoration: none;
   margin: auto;
-  animation: hover;
+  animation: hover 3s infinite;
   animation-play-state: paused;
-  -moz-animation: hover;
+  -moz-animation: hover 3s infinite;
   -moz-animation-play-state: paused;
-  -webkit-animation: hover;
+  -webkit-animation: hover 3s infinite;
   -webkit-animation-play-state: paused;
   }
 .baritemlink:hover {
@@ -89,11 +89,11 @@
 }
 .bartitlelink {
   color: #000;
-  animation: hover2;
+  animation: hover2 3s infinite;
   animation-play-state: paused;
-  -moz-animation: hover2;
+  -moz-animation: hover2 3s infinite;
   -moz-animation-play-state: paused;
-  -webkit-animation: hover2;
+  -webkit-animation: hover2 3s infinite;
   -webkit-animation-play-state: paused;
 }
 .background {
