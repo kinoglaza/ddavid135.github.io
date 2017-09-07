@@ -22,7 +22,6 @@
   letter-spacing: 1pt;
   font-size: 177%;
   font-family: georgia, serif;
-  line-height: 2;
   color: #DEBD83;
   font-weight: bold;
   text-decoration: none;
@@ -85,7 +84,7 @@
   letter-spacing: 1pt;
   font-size: 177%;
   font-family: georgia, serif;
-  line-height: 2;
+  line-height: 12vh;
   color: #000000;
   font-weight: bold;
   text-decoration: none;
