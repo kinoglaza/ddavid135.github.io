@@ -92,9 +92,9 @@
   margin: auto;
 }
 .bartitlelink:hover {
-  animation: hover 4s infinite;
-  -moz-animation: hover 4s infinite;
-  -webkit-animation: hover 4s infinite;
+  animation: hover2 4s infinite;
+  -moz-animation: hover2 4s infinite;
+  -webkit-animation: hover2 4s infinite;
 }
 .background {
   -webkit-animation: fadein 5s;
