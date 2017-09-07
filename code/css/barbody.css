@@ -27,17 +27,11 @@
   font-weight: bold;
   text-decoration: none;
   margin: auto;
-  animation: hover 3s infinite;
-  animation-play-state: paused;
-  -moz-animation: hover 3s infinite;
-  -moz-animation-play-state: paused;
-  -webkit-animation: hover 3s infinite;
-  -webkit-animation-play-state: paused;
   }
 .baritemlink:hover {
-  animation-play-state: running;
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
+  animation: hover 2s infinite;
+  -moz-animation: hover 2s infinite;
+  -webkit-animation: hover 2s infinite;
 }
 .baritemlink[lines="1"] {
  line-height: 12vh; 
@@ -89,12 +83,11 @@
 }
 .bartitlelink {
   color: #000;
-  animation: hover2 3s infinite;
-  animation-play-state: paused;
-  -moz-animation: hover2 3s infinite;
-  -moz-animation-play-state: paused;
-  -webkit-animation: hover2 3s infinite;
-  -webkit-animation-play-state: paused;
+}
+.bartitlelink:hover {
+  animation: hover 2s infinite;
+  -moz-animation: hover 2s infinite;
+  -webkit-animation: hover 2s infinite;
 }
 .background {
   -webkit-animation: fadein 5s;
