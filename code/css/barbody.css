@@ -21,7 +21,7 @@
 .baritemlink {
   letter-spacing: 1pt;
   font-size: 177%;
-  font-family: georgia, serif;
+  font-family: comic sans, comic sans ms, cursive, verdana, arial, sans-serif; /* Old: georgia, serif; */
   line-height: 2;
   color: #DEBD83;
   font-weight: bold;
