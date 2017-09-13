@@ -44,6 +44,8 @@
   box-shadow: 3px 3px 3px #000000;
   color: #F4C242;
   height: 65%;
+  opacity: 0.8;
+  filter: alpha(opacity=0.8);
 }
 .body div * {
   font-family: palatino linotype, palatino, serif;
