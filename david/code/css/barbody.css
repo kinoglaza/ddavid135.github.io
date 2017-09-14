@@ -1,18 +1,18 @@
 .bar {
   position: fixed;
-  background-color: #733816;
+  background-color: #FFFFFF;
   height: 24%;
   width: 100%;
 }
 .baritem:hover {
-  background-color: #F4C77F;
+  background-color: #BBBBBB;
 }
 .bartitle:hover {
-  background-color: #F4C77F;
+  background-color: #BBBBBB;
 }
 .baritem {
   height: 50%;
-  background-color: #F4B042;
+  background-color: #FFFFFF;
   position: absolute;
   top: 50%;
   width: 50%;
@@ -23,7 +23,7 @@
   font-size: 177%;
   font-family: georgia, serif;
   line-height: 2;
-  color: #6886D8;
+  color: #FF0126;
   font-weight: bold;
   text-decoration: none;
   margin: auto;
@@ -40,7 +40,7 @@
   border-radius: 15px 15px;
   -moz-border-radius: 15px 15px;
   -webkit-border-radius: 15px 15px;
-  background-color: #353429;
+  background-color: #FFFFFF;
   box-shadow: 3px 3px 3px #000000;
   color: #F4C242;
   height: 65%;
@@ -62,7 +62,7 @@
 }
 .bartitle {
   height: 50%;
-  background-color: #F4B042;
+  background-color: #FFFFFF;
   position: absolute;
   top: 0%;
   width: 100%;
