@@ -1,18 +1,18 @@
 .bar {
   position: fixed;
-  background-color: #FFFFFF;
+  background-color: #000000;
   height: 24%;
   width: 100%;
 }
 .baritem:hover {
-  background-color: #BBBBBB;
+  background-color: #333333;
 }
 .bartitle:hover {
-  background-color: #BBBBBB;
+  background-color: #333333;
 }
 .baritem {
   height: 50%;
-  background-color: #FFFFFF;
+  background-color: #000000;
   position: absolute;
   top: 50%;
   width: 50%;
@@ -62,7 +62,7 @@
 }
 .bartitle {
   height: 50%;
-  background-color: #FFFFFF;
+  background-color: #000000;
   position: absolute;
   top: 0%;
   width: 100%;
